@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.johndistler.zoofinal.PrimaryController">
+   <children>
+      <MenuBar prefWidth="200.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleImportFromJsonAction" text="Import from JSON" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExportToJsonAction" text="Export to JSON" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleMoveOverflowAnimalsToZooAction" text="Move Overflow Animals to Zoo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAddAnimalAction" text="Add Animal" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleRemoveAnimalAction" text="Remove Animal" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAddEnclosureAction" text="Add Enclosure" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleRemoveEnclosureAction" text="Remove Enclosure" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#handleClearAnimalsAction" text="Clear Animals" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleDisplayAnimalsAction" text="Display Animals" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox fx:id="zooParent" prefHeight="100.0" prefWidth="200.0" stylesheets="@Zoo.css" />
+      <HBox fx:id="overflowParent" prefHeight="100.0" prefWidth="200.0" stylesheets="@Zoo.css" />
+   </children>
+</VBox>

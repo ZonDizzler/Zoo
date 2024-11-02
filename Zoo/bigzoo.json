@@ -1,0 +1,47 @@
+[
+  {
+    "species": "Boo",
+    "diet": "C",
+    "size": 100.0
+  },
+  {
+    "species": "Frog",
+    "diet": "O",
+    "size": 20.0
+  },
+  {
+    "species": "Frog",
+    "diet": "O",
+    "size": 20.0
+  },
+  {
+    "species": "Meme",
+    "diet": "H",
+    "size": 20.0
+  },
+  {
+    "species": "Oak",
+    "diet": "H",
+    "size": 50.0
+  },
+  {
+    "species": "Birch",
+    "diet": "H",
+    "size": 40.0
+  },
+  {
+    "species": "Mite",
+    "diet": "H",
+    "size": 1.0
+  },
+  {
+    "species": "Mite",
+    "diet": "H",
+    "size": 1.0
+  },
+  {
+    "species": "Lion",
+    "diet": "C",
+    "size": 30.0
+  }
+]
